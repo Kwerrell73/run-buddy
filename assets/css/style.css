@@ -13,6 +13,7 @@ body {
 /* apply styles to <header> */
 header {
   padding: 20px 35px;
+  margin: 0 60px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,13 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 /* apply styles to <footer> */
 footer {
   background: #fce138;
@@ -85,7 +93,7 @@ footer a {
 }
 
 section {
-  padding: 60px;
+  padding: 0 60px;
   
 }
 
@@ -93,13 +101,14 @@ section {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 80%;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
+
+
 }
 
 .hero-cta {
@@ -146,9 +155,15 @@ section {
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
+  background-color: rgba(255,255,255, 0.75);
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: non;
 }
 
 .hero-form label {
@@ -163,6 +178,11 @@ section {
   font-size: 16px;
   border-radius: 10px;
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
 /* Hero Form End */
 
 /* What We Do section Start*/
@@ -372,6 +392,12 @@ section {
   font-size: 16px;
   border-radius: 10p;
 }
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
 
 .flex-row {
   display: flex;
